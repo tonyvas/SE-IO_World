@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <VoxelMaterials>
-    <!-- Ice -->
+    <!-- Ice 5x -->
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
@@ -62,114 +62,7 @@
       <LandingEffect>Landing_Jet_Ground_Snow</LandingEffect>
     </VoxelMaterial>
   
-    <!-- Sulfur -->
-    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
-      <Id>
-        <TypeId>VoxelMaterialDefinition</TypeId>
-        <SubtypeId>Sulfur</SubtypeId>
-      </Id>
-      <MaterialTypeName>Rock</MaterialTypeName>
-      <MinedOre>Sulfur</MinedOre>
-      <MinedOreRatio>2</MinedOreRatio>
-      <CanBeHarvested>true</CanBeHarvested>
-      <!-- Wether it spawns in asteroids, default true (even if undefined) -->
-      <SpawnsInAsteroids>true</SpawnsInAsteroids>
-      <!-- True = generated in ore pockets and gets detected by ore detector, false = used as asteroids shell -->
-      <IsRare>true</IsRare>
-      <!-- Wether it can spawn from meteorite impacts, default true (even if undefined); NOTE: requires IsRare to be true. -->
-      <SpawnsFromMeteorites>true</SpawnsFromMeteorites>
-      <AsteroidGeneratorSpawnProbabilityMultiplier>2</AsteroidGeneratorSpawnProbabilityMultiplier>
-	  
-      <VoxelHandPreview>Textures\Voxels\Gold_01_Thumbnail.dds</VoxelHandPreview>
-      <ColorMetalXZnY>Textures\Voxels\Sulfur_cm.dds</ColorMetalXZnY> 
-      <NormalGlossXZnY>Textures\Voxels\Stone_01_ForAxisXZ_ng.dds</NormalGlossXZnY> 
-      <ExtXZnYFar2>Textures\Voxels\Dummy_add.dds</ExtXZnYFar2>
-
-      <SimpleTilingSetup>
-      </SimpleTilingSetup>
-      
-      <InitialScale>2</InitialScale>
-      <ScaleMultiplier>4</ScaleMultiplier>
-      <InitialDistance>4</InitialDistance>
-      <DistanceMultiplier>1.4</DistanceMultiplier>
-      <TilingScale>20</TilingScale>
-
-      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
-
-    </VoxelMaterial>
-  
-    <!-- Coal -->
-    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
-      <Id>
-        <TypeId>VoxelMaterialDefinition</TypeId>
-        <SubtypeId>Coal</SubtypeId>
-      </Id>
-      <MaterialTypeName>Rock</MaterialTypeName>
-      <MinedOre>Coal</MinedOre>
-      <MinedOreRatio>4</MinedOreRatio>
-      <CanBeHarvested>true</CanBeHarvested>
-      <!-- Wether it spawns in asteroids, default true (even if undefined) -->
-      <SpawnsInAsteroids>true</SpawnsInAsteroids>
-      <!-- True = generated in ore pockets and gets detected by ore detector, false = used as asteroids shell -->
-      <IsRare>true</IsRare>
-      <!-- Wether it can spawn from meteorite impacts, default true (even if undefined); NOTE: requires IsRare to be true. -->
-      <SpawnsFromMeteorites>true</SpawnsFromMeteorites>
-      <AsteroidGeneratorSpawnProbabilityMultiplier>3</AsteroidGeneratorSpawnProbabilityMultiplier>
-	  
-      <VoxelHandPreview>Textures\Voxels\Silicon_01_Thumbnail.dds</VoxelHandPreview>
-      <ColorMetalXZnY>Textures\Voxels\Silicon_01_ForAxisXZ_cm.dds</ColorMetalXZnY>
-      <NormalGlossXZnY>Textures\Voxels\Silicon_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
-      <ExtXZnY>Textures\Voxels\Silicon_01_ForAxisY_add.dds</ExtXZnY>
-
-      <SimpleTilingSetup>
-      </SimpleTilingSetup>
-      
-      <InitialScale>2</InitialScale>
-      <ScaleMultiplier>4</ScaleMultiplier>
-      <InitialDistance>4</InitialDistance>
-      <DistanceMultiplier>1.4</DistanceMultiplier>
-      <TilingScale>20</TilingScale>
-
-      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
-
-    </VoxelMaterial>
-  
-    <!-- OilSand -->
-    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
-      <Id>
-        <TypeId>VoxelMaterialDefinition</TypeId>
-        <SubtypeId>OilSand</SubtypeId>
-      </Id>
-      <MaterialTypeName>Rock</MaterialTypeName>
-      <MinedOre>OilSand</MinedOre>
-      <MinedOreRatio>2</MinedOreRatio>
-      <CanBeHarvested>true</CanBeHarvested>
-      <!-- Wether it spawns in asteroids, default true (even if undefined) -->
-      <SpawnsInAsteroids>false</SpawnsInAsteroids>
-      <!-- True = generated in ore pockets and gets detected by ore detector, false = used as asteroids shell -->
-      <IsRare>true</IsRare>
-      <!-- Wether it can spawn from meteorite impacts, default true (even if undefined); NOTE: requires IsRare to be true. -->
-      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
-      
-      <VoxelHandPreview>Textures\Voxels\Silicon_01_Thumbnail.dds</VoxelHandPreview>
-      <ColorMetalXZnY>Textures\Voxels\Silicon_01_ForAxisXZ_cm.dds</ColorMetalXZnY>
-      <NormalGlossXZnY>Textures\Voxels\Silicon_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
-      <ExtXZnY>Textures\Voxels\Silicon_01_ForAxisY_add.dds</ExtXZnY>
-
-      <SimpleTilingSetup>
-      </SimpleTilingSetup>
-      
-      <InitialScale>2</InitialScale>
-      <ScaleMultiplier>4</ScaleMultiplier>
-      <InitialDistance>4</InitialDistance>
-      <DistanceMultiplier>1.4</DistanceMultiplier>
-      <TilingScale>20</TilingScale>
-
-      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
-
-    </VoxelMaterial>
-  
-    <!-- Copper -->
+    <!-- Copper 3x -->
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
@@ -184,8 +77,8 @@
       <!-- True = generated in ore pockets and gets detected by ore detector, false = used as asteroids shell -->
       <IsRare>true</IsRare>
       <!-- Wether it can spawn from meteorite impacts, default true (even if undefined); NOTE: requires IsRare to be true. -->
-      <SpawnsFromMeteorites>true</SpawnsFromMeteorites>
-      <AsteroidGeneratorSpawnProbabilityMultiplier>4</AsteroidGeneratorSpawnProbabilityMultiplier>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <AsteroidGeneratorSpawnProbabilityMultiplier>3</AsteroidGeneratorSpawnProbabilityMultiplier>
 	  
       <VoxelHandPreview>Textures\Voxels\Gold_01_Thumbnail.dds</VoxelHandPreview>
       <ColorMetalXZnY>Textures\Voxels\Gold_01_ForAxisXZ_cm.dds</ColorMetalXZnY> 
@@ -204,8 +97,44 @@
       <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
 
     </VoxelMaterial>
-  
-    <!-- Lithium -->
+
+    <!-- Bauxite 3x -->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>Bauxite</SubtypeId>
+      </Id>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <MinedOre>Bauxite</MinedOre>
+      <MinedOreRatio>3</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <!-- Wether it spawns in asteroids, default true (even if undefined) -->
+      <SpawnsInAsteroids>true</SpawnsInAsteroids>
+      <!-- True = generated in ore pockets and gets detected by ore detector, false = used as asteroids shell -->
+      <IsRare>true</IsRare>
+      <!-- Wether it can spawn from meteorite impacts, default true (even if undefined); NOTE: requires IsRare to be true. -->
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <AsteroidGeneratorSpawnProbabilityMultiplier>3</AsteroidGeneratorSpawnProbabilityMultiplier>
+	  
+      <VoxelHandPreview>Textures\Voxels\AlienRockyMountain_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\AlienRockyMountain_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\AlienRockyMountain_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\AlienRockyMountain_add.dds</ExtXZnY>
+
+      <SimpleTilingSetup>
+      </SimpleTilingSetup>
+      
+      <InitialScale>2</InitialScale>
+      <ScaleMultiplier>4</ScaleMultiplier>
+      <InitialDistance>4</InitialDistance>
+      <DistanceMultiplier>1.4</DistanceMultiplier>
+      <TilingScale>20</TilingScale>
+
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
+
+    </VoxelMaterial>
+
+    <!-- Lithium 1x -->
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
@@ -220,8 +149,8 @@
       <!-- True = generated in ore pockets and gets detected by ore detector, false = used as asteroids shell -->
       <IsRare>true</IsRare>
       <!-- Wether it can spawn from meteorite impacts, default true (even if undefined); NOTE: requires IsRare to be true. -->
-      <SpawnsFromMeteorites>true</SpawnsFromMeteorites>
-      <AsteroidGeneratorSpawnProbabilityMultiplier>3</AsteroidGeneratorSpawnProbabilityMultiplier>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <AsteroidGeneratorSpawnProbabilityMultiplier>1</AsteroidGeneratorSpawnProbabilityMultiplier>
 	  
       <VoxelHandPreview>Textures\Voxels\Snow_01_Thumbnail.dds</VoxelHandPreview>
       <ColorMetalXZnY>Textures\Voxels\Snow_01_ForAxisXZ_cm.dds</ColorMetalXZnY>
@@ -241,28 +170,79 @@
 
     </VoxelMaterial>
   
-    <!-- Bauxite -->
+    <!-- Uraninite_01 1x -->
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
-        <SubtypeId>Bauxite</SubtypeId>
+        <SubtypeId>Uraninite_01</SubtypeId>
       </Id>
       <MaterialTypeName>Rock</MaterialTypeName>
-      <MinedOre>Bauxite</MinedOre>
-      <MinedOreRatio>3</MinedOreRatio>
+      <MinedOre>Uranium</MinedOre>
+      <MinedOreRatio>0.3</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>true</IsRare>
+      <SpawnsInAsteroids>true</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <AsteroidGeneratorSpawnProbabilityMultiplier>1</AsteroidGeneratorSpawnProbabilityMultiplier>
+
+      <VoxelHandPreview>Textures\Voxels\Uraninite_01_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\Uraninite_01_ForAxisXZ_cm.dds</ColorMetalXZnY>    
+      <NormalGlossXZnY>Textures\Voxels\Uraninite_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Uraninite_01_ForAxisXZ_add.dds</ExtXZnY>
+
+      <SimpleTilingSetup>
+        <InitialScale>2</InitialScale>
+        <ScaleMultiplier>7</ScaleMultiplier>
+        <InitialDistance>5</InitialDistance>
+        <DistanceMultiplier>5</DistanceMultiplier>
+
+        <Far1Distance>10</Far1Distance>
+        <Far1Scale>10</Far1Scale>
+
+        <Far2Distance>90</Far2Distance>
+        <Far2Scale>35</Far2Scale>
+      </SimpleTilingSetup>
+
+      <InitialScale>1.5</InitialScale>
+      <ScaleMultiplier>5</ScaleMultiplier>
+      <InitialDistance>5</InitialDistance>
+      <DistanceMultiplier>4</DistanceMultiplier>
+      <TilingScale>24</TilingScale>
+	  
+	    <ColorMetalXZnYFar1>Textures\Voxels\Uraninite_01_ForAxisXZ_distance_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\Uraninite_01_ForAxisXZ_distance_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Uraninite_01_ForAxisXZ_distance_add.dds</ExtXZnYFar1>
+
+      <Far1Distance>10</Far1Distance>
+      <Far1Scale>10</Far1Scale>	  
+	  
+      <Far2Distance>90</Far2Distance>
+      <Far2Scale>35</Far2Scale>
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
+    </VoxelMaterial>
+
+    <!-- Sulfur 0x -->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>Sulfur</SubtypeId>
+      </Id>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <MinedOre>Sulfur</MinedOre>
+      <MinedOreRatio>2</MinedOreRatio>
       <CanBeHarvested>true</CanBeHarvested>
       <!-- Wether it spawns in asteroids, default true (even if undefined) -->
-      <SpawnsInAsteroids>true</SpawnsInAsteroids>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
       <!-- True = generated in ore pockets and gets detected by ore detector, false = used as asteroids shell -->
       <IsRare>true</IsRare>
       <!-- Wether it can spawn from meteorite impacts, default true (even if undefined); NOTE: requires IsRare to be true. -->
-      <SpawnsFromMeteorites>true</SpawnsFromMeteorites>
-      <AsteroidGeneratorSpawnProbabilityMultiplier>4</AsteroidGeneratorSpawnProbabilityMultiplier>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <AsteroidGeneratorSpawnProbabilityMultiplier>0</AsteroidGeneratorSpawnProbabilityMultiplier>
 	  
-      <VoxelHandPreview>Textures\Voxels\AlienRockyMountain_Thumbnail.dds</VoxelHandPreview>
-      <ColorMetalXZnY>Textures\Voxels\AlienRockyMountain_cm.dds</ColorMetalXZnY>
-      <NormalGlossXZnY>Textures\Voxels\AlienRockyMountain_ng.dds</NormalGlossXZnY>
-      <ExtXZnY>Textures\Voxels\AlienRockyMountain_add.dds</ExtXZnY>
+      <VoxelHandPreview>Textures\Voxels\Gold_01_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\Sulfur_cm.dds</ColorMetalXZnY> 
+      <NormalGlossXZnY>Textures\Voxels\Stone_01_ForAxisXZ_ng.dds</NormalGlossXZnY> 
+      <ExtXZnYFar2>Textures\Voxels\Dummy_add.dds</ExtXZnYFar2>
 
       <SimpleTilingSetup>
       </SimpleTilingSetup>
@@ -277,7 +257,79 @@
 
     </VoxelMaterial>
   
-    <!-- Titanium -->
+    <!-- Coal 0x -->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>Coal</SubtypeId>
+      </Id>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <MinedOre>Coal</MinedOre>
+      <MinedOreRatio>4</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <!-- Wether it spawns in asteroids, default true (even if undefined) -->
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <!-- True = generated in ore pockets and gets detected by ore detector, false = used as asteroids shell -->
+      <IsRare>true</IsRare>
+      <!-- Wether it can spawn from meteorite impacts, default true (even if undefined); NOTE: requires IsRare to be true. -->
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <AsteroidGeneratorSpawnProbabilityMultiplier>0</AsteroidGeneratorSpawnProbabilityMultiplier>
+	  
+      <VoxelHandPreview>Textures\Voxels\Silicon_01_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\Silicon_01_ForAxisXZ_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\Silicon_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Silicon_01_ForAxisY_add.dds</ExtXZnY>
+
+      <SimpleTilingSetup>
+      </SimpleTilingSetup>
+      
+      <InitialScale>2</InitialScale>
+      <ScaleMultiplier>4</ScaleMultiplier>
+      <InitialDistance>4</InitialDistance>
+      <DistanceMultiplier>1.4</DistanceMultiplier>
+      <TilingScale>20</TilingScale>
+
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
+
+    </VoxelMaterial>
+  
+    <!-- OilSand 0x -->
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>OilSand</SubtypeId>
+      </Id>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <MinedOre>OilSand</MinedOre>
+      <MinedOreRatio>2</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <!-- Wether it spawns in asteroids, default true (even if undefined) -->
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <!-- True = generated in ore pockets and gets detected by ore detector, false = used as asteroids shell -->
+      <IsRare>true</IsRare>
+      <!-- Wether it can spawn from meteorite impacts, default true (even if undefined); NOTE: requires IsRare to be true. -->
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <AsteroidGeneratorSpawnProbabilityMultiplier>0</AsteroidGeneratorSpawnProbabilityMultiplier>
+      
+      <VoxelHandPreview>Textures\Voxels\Silicon_01_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\Silicon_01_ForAxisXZ_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\Silicon_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Silicon_01_ForAxisY_add.dds</ExtXZnY>
+
+      <SimpleTilingSetup>
+      </SimpleTilingSetup>
+      
+      <InitialScale>2</InitialScale>
+      <ScaleMultiplier>4</ScaleMultiplier>
+      <InitialDistance>4</InitialDistance>
+      <DistanceMultiplier>1.4</DistanceMultiplier>
+      <TilingScale>20</TilingScale>
+
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
+
+    </VoxelMaterial>
+
+    <!-- Titanium 0x -->
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
@@ -288,12 +340,12 @@
       <MinedOreRatio>2</MinedOreRatio>
       <CanBeHarvested>true</CanBeHarvested>
       <!-- Wether it spawns in asteroids, default true (even if undefined) -->
-      <SpawnsInAsteroids>true</SpawnsInAsteroids>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
       <!-- True = generated in ore pockets and gets detected by ore detector, false = used as asteroids shell -->
       <IsRare>true</IsRare>
       <!-- Wether it can spawn from meteorite impacts, default true (even if undefined); NOTE: requires IsRare to be true. -->
-      <SpawnsFromMeteorites>true</SpawnsFromMeteorites>
-      <AsteroidGeneratorSpawnProbabilityMultiplier>3</AsteroidGeneratorSpawnProbabilityMultiplier>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <AsteroidGeneratorSpawnProbabilityMultiplier>0</AsteroidGeneratorSpawnProbabilityMultiplier>
 	  
       <VoxelHandPreview>Textures\Voxels\Silicon_01_Thumbnail.dds</VoxelHandPreview>
       <ColorMetalXZnY>Textures\Voxels\Silicon_01_ForAxisXZ_cm.dds</ColorMetalXZnY>
@@ -313,7 +365,7 @@
 
     </VoxelMaterial>
   
-    <!-- Tantalum -->
+    <!-- Tantalum 0x -->
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
@@ -324,12 +376,12 @@
       <MinedOreRatio>1</MinedOreRatio>
       <CanBeHarvested>true</CanBeHarvested>
       <!-- Wether it spawns in asteroids, default true (even if undefined) -->
-      <SpawnsInAsteroids>true</SpawnsInAsteroids>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
       <!-- True = generated in ore pockets and gets detected by ore detector, false = used as asteroids shell -->
       <IsRare>true</IsRare>
       <!-- Wether it can spawn from meteorite impacts, default true (even if undefined); NOTE: requires IsRare to be true. -->
-      <SpawnsFromMeteorites>true</SpawnsFromMeteorites>
-      <AsteroidGeneratorSpawnProbabilityMultiplier>1</AsteroidGeneratorSpawnProbabilityMultiplier>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <AsteroidGeneratorSpawnProbabilityMultiplier>0</AsteroidGeneratorSpawnProbabilityMultiplier>
 	  
       <VoxelHandPreview>Textures\Voxels\Silicon_01_Thumbnail.dds</VoxelHandPreview>
       <ColorMetalXZnY>Textures\Voxels\Silicon_01_ForAxisXZ_cm.dds</ColorMetalXZnY>
@@ -349,7 +401,7 @@
 
     </VoxelMaterial>
   
-    <!-- Niter -->
+    <!-- Niter 0x -->
     <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
       <Id>
         <TypeId>VoxelMaterialDefinition</TypeId>
@@ -365,6 +417,7 @@
       <IsRare>true</IsRare>
       <!-- Wether it can spawn from meteorite impacts, default true (even if undefined); NOTE: requires IsRare to be true. -->
       <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <AsteroidGeneratorSpawnProbabilityMultiplier>0</AsteroidGeneratorSpawnProbabilityMultiplier>
 	  
       <VoxelHandPreview>Textures\Voxels\Snow_01_Thumbnail.dds</VoxelHandPreview>
       <ColorMetalXZnY>Textures\Voxels\Snow_01_ForAxisXZ_cm.dds</ColorMetalXZnY>
