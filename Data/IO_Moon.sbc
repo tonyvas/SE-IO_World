@@ -239,7 +239,7 @@
             <!-- !INSERT ONLY IN BLUE CHANNEL! -->
             <!-- Tier 4 -->
             <Ore Value="10" Type="Platinum_01" Start="1" Depth="2" TargetColor="#616c83" ColorInfluence="15"/>
-            <Ore Value="50" Type="Tantalum" Start="1" Depth="2" TargetColor="#616c83" ColorInfluence="15"/>
+            <Ore Value="100" Type="Tantalum" Start="1" Depth="2" TargetColor="#616c83" ColorInfluence="15"/>
         </OreMappings>
 
         <!-- END Earthmoon definitions -->
