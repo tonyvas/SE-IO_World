@@ -1951,7 +1951,7 @@
             <DisplayName>Gasoline Engine</DisplayName>
             <Description>Burns Gasoline to generate power.
 			Max Output: 15MW
-			Fuel Consumption: 1.5L/s</Description>
+			Fuel Consumption: 15L/s</Description>
             <Icon>Textures\GUI\Icons\Cubes\HydrogenEngineLarge.dds</Icon>
             <CubeSize>Large</CubeSize>
 			<GuiVisible>true</GuiVisible>
@@ -2004,7 +2004,7 @@
                     </Id>
                 </FuelInfo>
             </FuelInfos>
-            <FuelProductionToCapacityMultiplier>10</FuelProductionToCapacityMultiplier>
+            <FuelProductionToCapacityMultiplier>1</FuelProductionToCapacityMultiplier>
             <PrimarySound>ArcBlockHydrogenEngine</PrimarySound>
 
             <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
@@ -2040,7 +2040,7 @@
             <DisplayName>Gasoline Engine</DisplayName>
             <Description>Burns Gasoline to generate power.
 			Max Output: 1.5MW
-			Fuel Consumption: 150mL/s</Description>
+			Fuel Consumption: 1.5L/s</Description>
             <Icon>Textures\GUI\Icons\Cubes\HydrogenEngineSmall.dds</Icon>
             <CubeSize>Small</CubeSize>
 			<GuiVisible>true</GuiVisible>
@@ -2097,7 +2097,7 @@
                     </Id>
                 </FuelInfo>
             </FuelInfos>
-            <FuelProductionToCapacityMultiplier>10</FuelProductionToCapacityMultiplier>
+            <FuelProductionToCapacityMultiplier>1</FuelProductionToCapacityMultiplier>
             <PrimarySound>ArcBlockHydrogenEngine</PrimarySound>
 
             <DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
